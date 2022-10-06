@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body {
+  background-color: rgb(72, 72, 111);
+  color: white;
+  font-family:'Times New Roman', Times, serif
+}
+.follow-me {
+ font-size:  20px;
+ font-weight: bold;
+ color: red;
+}
+img {
+    border-radius: 50%;
+    position: absolute;
+    width: 120px;
+    height: 130px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+h1 {
+  font-family: "Sofia", arial, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $otherAccent;
+}
+h4 {
+  text-align: justify;
+}
+h3 {
+  text-indent: 50px;
+  text-align: center;
+}
+div.melware {
+  position: relative;
+  top: -300px;
+  left: 610px;
+  width: 630px;
+}
+.description {
+  text-align: justify;
+}
+.border1 {
+  margin: auto;
+  text-align: center;
+  width: 95%;
+  height: 750px;
+  border: 1px solid;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: 60px;
+  background-color: #dd004e;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col h4{
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+}
+.footer {
+  display: inline;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
